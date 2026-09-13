@@ -1,3 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Window = Rayfield:CreateWindow({Name = "Test Hub"})
-Rayfield:Notify({Title = "Test", Content = "Läuft perfekt!"})
+local Window = Rayfield:CreateWindow({
+    Name = "Test Hub",
+    LoadingTitle = "Test",
+    ConfigurationSaving = { Enabled = false }
+})
+Rayfield:Notify({Title = "Erfolg!", Content = "Rayfield läuft perfekt!", Duration = 5})
